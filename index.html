@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!!Sorry For This!!</title>
+    <link rel="stylesheet" href="back.css">    
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#button").click(function(){
+                $(".center").hide();
+                $("#elements").hide();
+                $("#button").hide();
+                $(".showtime").show();               
+                $("#textt").fadeIn("1");
+                $('#text').fadeIn("1");
+             $("#iamg").fadeIn("1");
+                $("#iamg").animate({
+                    opacity : '1',
+                    width: '20%'
+                });
+                $("element").fadeIn("1");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#yes").click(function(){
+               $(".showtime").hide();               
+               $("#textt").fadeOut();
+               $('#text').fadeOut();
+               $("#iamg").fadeOut();
+               $("#element").fadeOut();
+                $(".yess").show();
+
+            });
+        });
+
+        $(document).ready(function(){
+            $("#no").click(function(){
+               $(".showtime").hide();               
+               $("#textt").fadeOut();
+               $('#text').fadeOut();
+               $("#iamg").fadeOut();
+               $("#element").fadeOut();
+               $(".noo").show();
+               $("#reason").fadeIn();
+               $("#gifs").fadeIn(slow);            
+
+            });
+        });
+    </script>    
+</head>
+<body>
+ <div class="center">
+    <p id="elements">I have a magic show for you <br></p>  
+
+    <button onclick="myfunctions()" id="button">Click here</button>
+ </div>
+
+ <div class="showtime" >
+    <h2 id="textt" style="display: none;">I love You</h2>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade" style="max-width: 1000px; position: relative;margin: auto;">
+            <div class="numbertext">1 / 3</div>
+          <img src="12.jfif" style="width:10%" id="iamg">
+          
+        </div>
+            
+        <div class="mySlides fade" style=" max-width: 1000px; position: relative;margin: auto;">
+            <div class="numbertext">2 / 3</div>
+          <img src="13.jfif" style="width:20%"id="iamg">
+                  </div>
+        
+        <div class="mySlides fade" style=" max-width: 1000px; margin: auto; position: relative;">
+            <div class="numbertext">3 / 3</div>
+          <img src="10.jfif" style="width:20%"id="iamg">
+          
+        </div>
+        
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+    <h2 id="text" style="display: none;">Anushka</h2>
+    <p id="element" >Anushka, I don't know how to say this one, and its pretty awkward too. But yeah
+        I'm wholly in love with you. <br>What do you think about such kind of proposal? 
+        YES or NO ? HEHE!!
+    </p>
+    <button id="yes">Yes</button> <Button id="no">No</Button>
+ </div>
+
+ <div class="yess" style="display: none; text-align: center;">
+    <p id="reason">!!Reply this answer to me in messenger or else!! <br>I got a surprise for you, Girl.</p>
+    <iframe id="gif" src="https://giphy.com/embed/IIstRixiK4dA7XXwPz" width="200" height="477" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/love-i-you-for-IIstRixiK4dA7XXwPz"></a></p>
+    <p id="reason">!!Love You <3!!</p>
+ </div>
+
+ <div class="noo" style="display: none; text-align: center;">
+    <p id="reason">I respect your decision, but May I know the good reason? <br>My life is dark without You.</p>
+    <iframe id="gifs" src="https://giphy.com/embed/YdBpkHRzPsmBUa6MGb" width="200" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/puppy-corgi-lazy-YdBpkHRzPsmBUa6MGb"></a></p>
+    <p id="reason">!!!Please!!!</p>
+ </div>
+    <script src="java.js"></script>
+  
+</body>
+</html>
